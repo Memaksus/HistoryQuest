@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кінець?</title>
+    <link rel="stylesheet" href="/css/the end.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script>
+        function checkNumber() {
+            const inputField = document.getElementById('numberInput');
+            const message = document.getElementById('message');
+            const correctNumber = 1922;
+
+            if (inputField.value == correctNumber) {
+                message.textContent = 'Правильно!';
+                message.style.color = 'green';
+            } else {
+                message.textContent = 'Неправильно! Спробуйте ще раз.';
+                message.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="number">
+        <p>-105</p>
+    </div>
+    <div class="check">
+        <h2>Чи були ви уважними:</h2>
+        <input type="number" id="numberInput">
+        <button onclick="checkNumber()">Перевірити</button>
+        <p id="message"></p>
+    </div>
+    <div class="secret">
+        підказка: Цу був початок. Початок того що завершилось через майже 70 років 
+    </div>
+</body>
+</html>
